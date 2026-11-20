@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CHEMORA - Media pembelajaran kimia interaktif untuk siswa SMA dan SMK.">
+  <title>CHEMORA | Belajar Kimia Jadi Seru</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="CHEMORA beranda"><span class="brand-mark">C</span> CHEMORA<span class="brand-dot">.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Beranda</a>
+        <a href="#materi">Materi</a>
+        <a href="#lab">Laboratorium</a>
+        <a href="#kalkulator">Kalkulator</a>
+        <a href="#kuis">Kuis</a>
+        <a href="#tentang">Tentang</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">MEDIA PEMBELAJARAN KIMIA SMA/SMK</span>
+          <h1>Explore Chemistry,<br><span>Make Learning Fun!</span></h1>
+          <p>Kenali dunia kimia lewat materi singkat, aktivitas interaktif, dan tantangan seru. Belajar jadi lebih mudah dipahami!</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#materi">Mulai Belajar <span>→</span></a>
+            <a class="button button-light" href="#kuis">Coba Kuis</a>
+          </div>
+          <div class="hero-note"><span>✦</span> Belajar sedikit demi sedikit, pahami konsepnya.</div>
+        </div>
+        <div class="hero-art" aria-label="Ilustrasi laboratorium kimia">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="flask">⚗️</div><div class="bubble bubble-a">H₂O</div>
+          <div class="bubble bubble-b">NaCl</div><div class="bubble bubble-c">pH</div>
+          <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-stats">
+      <div class="container stats-grid">
+        <div><strong>01</strong><span>Materi ringkas</span></div>
+        <div><strong>02</strong><span>Aktivitas interaktif</span></div>
+        <div><strong>03</strong><span>Latihan mandiri</span></div>
+      </div>
+    </section>
+
+    <section class="section container" id="materi">
+      <div class="section-heading">
+        <span class="eyebrow">JELAJAHI KONSEP</span>
+        <h2>Materi <span>Kimia</span></h2>
+        <p>Pilih topik untuk membaca pengantar singkatnya.</p>
+      </div>
+      <div class="topic-grid">
+        <article class="topic-card topic-blue">
+          <div class="topic-icon">⚛️</div><span class="topic-number">01 / DASAR</span>
+          <h3>Struktur Atom</h3><p>Mengenal proton, neutron, elektron, dan susunan atom.</p>
+          <button class="text-button" data-topic="atom">Pelajari konsep <span>→</span></button>
+        </article>
+        <article class="topic-card topic-pink">
+          <div class="topic-icon">🧩</div><span class="topic-number">02 / UNSUR</span>
+          <h3>Sistem Periodik</h3><p>Memahami golongan, periode, dan sifat unsur.</p>
+          <button class="text-button" data-topic="periodik">Pelajari konsep <span>→</span></button>
+        </article>
+        <article class="topic-card topic-yellow">
+          <div class="topic-icon">🧪</div><span class="topic-number">03 / IKATAN</span>
+          <h3>Ikatan Kimia</h3><p>Mengenal ikatan ion, kovalen, dan logam.</p>
+          <button class="text-button" data-topic="ikatan">Pelajari konsep <span>→</span></button>
+        </article>
+        <article class="topic-card topic-mint">
+          <div class="topic-icon">💧</div><span class="topic-number">04 / LARUTAN</span>
+          <h3>Asam dan Basa</h3><p>Mengenal skala pH dan contoh zat di sekitar kita.</p>
+          <button class="text-button" data-topic="asam">Pelajari konsep <span>→</span></button>
+        </article>
+      </div>
+      <div class="detail-panel" id="topicDetail" aria-live="polite">
+        <div><span class="eyebrow">RUANG BELAJAR</span><h3>Pilih salah satu materi</h3><p>Tekan tombol “Pelajari konsep” pada kartu materi untuk menampilkan penjelasan singkat di sini.</p></div>
+      </div>
+    </section>
+
+    <section class="section lab-section" id="lab">
+      <div class="container lab-grid">
+        <div>
+          <span class="eyebrow">BELAJAR DENGAN AMAN</span>
+          <h2>Dunia <span>Laboratorium</span></h2>
+          <p class="section-intro">Laboratorium adalah tempat untuk mengamati dan mempelajari fenomena kimia. Keselamatan selalu menjadi hal utama.</p>
+          <ul class="safety-list">
+            <li><span>✓</span> Gunakan jas laboratorium dan alat pelindung sesuai arahan guru.</li>
+            <li><span>✓</span> Baca label bahan dan petunjuk praktikum sebelum kegiatan.</li>
+            <li><span>✓</span> Jangan mencicipi atau mencium bahan kimia secara langsung.</li>
+            <li><span>✓</span> Ikuti instruksi guru dan laporkan jika terjadi tumpahan.</li>
+          </ul>
+        </div>
+        <div class="lab-visual"><div class="lab-circle">🧫</div><div class="lab-caption"><strong>Safety first!</strong><span>Utamakan prosedur dan arahan guru.</span></div></div>
+      </div>
+    </section>
+
+    <section class="section container" id="kalkulator">
+      <div class="section-heading">
+        <span class="eyebrow">ALAT BANTU BELAJAR</span>
+        <h2>Kalkulator <span>Mol</span></h2>
+        <p>Hitung jumlah mol dari massa dan massa molar suatu zat.</p>
+      </div>
+      <div class="calculator-card">
+        <div class="calculator-info"><div class="calculator-icon">∑</div><h3>Rumus jumlah mol</h3><p>Jumlah mol (n) diperoleh dengan membagi massa zat (m) dengan massa molar (Mr).</p><div class="formula">n = m / Mr</div><small>Masukkan massa dalam gram dan Mr dalam g/mol.</small></div>
+        <form id="molForm" class="calculator-form">
+          <label for="mass">Massa zat (gram)</label><input id="mass" type="number" min="0" step="any" placeholder="Contoh: 18" required>
+          <label for="molarMass">Massa molar (g/mol)</label><input id="molarMass" type="number" min="0" step="any" placeholder="Contoh: 18" required>
+          <button class="button button-primary" type="submit">Hitung jumlah mol</button>
+          <p class="result" id="molResult" aria-live="polite">Hasil perhitungan akan tampil di sini.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="kuis">
+      <div class="container quiz-grid">
+        <div><span class="eyebrow">UJI PEMAHAMANMU</span><h2>Mini <span>Quiz</span></h2><p class="section-intro">Jawab pertanyaan berikut untuk menguji pemahaman dasar kimia.</p><div class="quiz-decoration">?</div></div>
+        <div class="quiz-card">
+          <div class="quiz-top"><span id="questionCount">PERTANYAAN 1 DARI 5</span><span class="quiz-pill">CHEMORA QUIZ</span></div>
+          <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+          <h3 id="questionText">Partikel atom yang bermuatan negatif adalah ...</h3>
+          <div class="answer-list" id="answerList"></div>
+          <p class="quiz-feedback" id="quizFeedback" aria-live="polite">Pilih satu jawaban, lalu lanjutkan.</p>
+          <div class="quiz-bottom"><span id="scoreText">Skor: 0</span><button class="button button-primary" id="nextQuestion" disabled>Berikutnya →</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fact-section">
+      <div class="container fact-content"><div class="fact-icon">💡</div><div><span class="eyebrow">TAHUKAH KAMU?</span><h2>Kimia ada di sekitar kita.</h2><p>Air yang kita minum, udara yang kita hirup, hingga proses memasak melibatkan konsep kimia.</p></div><button class="button button-light" id="newFact">Fakta lainnya ↻</button></div>
+      <p class="container fact-text" id="factText">Garam dapur memiliki nama kimia natrium klorida (NaCl).</p>
+    </section>
+
+    <section class="section container about-section" id="tentang">
+      <div class="about-mark">C.</div><div><span class="eyebrow">TENTANG CHEMORA</span><h2>Kimia jadi lebih <span>dekat</span>.</h2><p>CHEMORA merupakan media pembelajaran kimia untuk siswa SMA/SMK. Website ini dirancang sebagai teman belajar untuk mengenal konsep, berlatih, dan menemukan contoh kimia dalam kehidupan sehari-hari.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark">C</span> CHEMORA<span class="brand-dot">.</span></a><p>Explore Chemistry, Make Learning Fun!</p><small>© <span id="year"></span> CHEMORA. Dibuat untuk kegiatan pembelajaran.</small></div></footer>
+</body>
+</html>
